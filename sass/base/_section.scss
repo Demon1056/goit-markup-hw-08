@@ -1,0 +1,20 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+@media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.section--no-padding-top {
+    padding-top: 0;
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+}
+
+.section--other-background {
+    background: #F5F4FA;
+}

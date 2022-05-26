@@ -1,0 +1,39 @@
+.networks-list {
+    display: flex;
+    justify-content: center;
+}
+
+.networks-list__item:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.networks-list__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-hover-focus-color);
+    }
+}
+
+.networks-list__icon {
+    fill: var(--icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .networks-list__link:hover &,
+    .networks-list__link:focus & {
+        fill: var(--second-text-color);
+    }
+}
+
+
+.networks-link--dark {
+    background: rgba(255, 255, 255, 0.1);
+}
