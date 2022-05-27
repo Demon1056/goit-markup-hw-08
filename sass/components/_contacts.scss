@@ -49,6 +49,34 @@
     margin-right: 10px;
 }
 
+.mob-contacts {
+    margin-bottom: 64px;
+}
+
+.mob-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-contacts__link-tell {
+    @media screen and (max-width: 377px) {
+        font-size: 27px;
+    }
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.mob-contacts__link-adress {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
 .footer__contacts {
     font-size: 14px;
     line-height: 1.71;

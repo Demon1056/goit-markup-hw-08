@@ -138,14 +138,18 @@
                 <h2 class="main-title">Чем мы занимаемся</h2>
                 <ul class="duties">
                     <li class="duties__item"><a href="">
-                            <img src="image/duties/duties1.jpg" alt="печатающии руки" width="370">
+                            <img srcset="./image/duties/duties1/duties1.jpg 1x, ./image/duties/duties1/duties1@2x.jpg 2x"
+                                src="image/duties/duties1/duties1.jpg" alt="печатающии руки" width="370">
                             <h3 class="duties__up-text">Десктопные приложения</h3>
                         </a></li>
-                    <li class="duties__item"><a href=""><img src="image/duties/duties2.jpg" alt="обзор смартфона"
-                                width="370">
+                    <li class="duties__item"><a href=""> <img
+                                srcset="./image/duties/duties2/duties2.jpg 1x, ./image/duties/duties2/duties2@2x.jpg 2x"
+                                src="image/duties/duties2/duties2.jpg" alt="Обзор смартфона" width="370">
                             <h3 class="duties__up-text">Мобильные приложения</h3>
                         </a></li>
-                    <li class="duties__item"><a href=""><img src="image/duties/duties3.jpg" alt="планшет" width="370">
+                    <li class="duties__item"><a href=""><img
+                                srcset="./image/duties/duties3/duties3.jpg 1x, ./image/duties/duties3/duties3@2x.jpg 2x"
+                                src="image/duties/duties3/duties3.jpg" alt="Планшет" width="370">
                             <h3 class="duties__up-text">Дизайнерские решения</h3>
                         </a></li>
                 </ul>
@@ -157,7 +161,15 @@
                 <h2 class="main-title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img src="image/workers/ihor.jpg" alt="Игорь Демьяненко" width="270" class="team__img">
+                        <picture>
+                            <source srcset="./image/workers/ihor/dihor.jpg 1x, ./image/workers/ihor/dihor@2x.jpg 2x"
+                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                            <source srcset="./image/workers/ihor/tihor.jpg, ./image/workers/ihor/tihor@2x.jpg 2x "
+                                media="(min-width: 768px)" sizes="min-width:354px" />
+                            <source srcset="./image/workers/ihor/mihor.jpg, ./image/workers/ihor/mihor@2x.jpg 2x"
+                                media="(max-width: 767px)" sizes="min-width:290px" />
+                            <img src="./image/workers/ihor/mihor.jpg" alt="Игорь Демьяненко" class="team__img">
+                        </picture>
                         <div class="team__area">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team__text">Product Designer</p>
@@ -182,7 +194,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="image/workers/olya.jpg" alt="Ольга Репина" width="270" class="team__img">
+                        <picture>
+                            <source srcset="./image/workers/olya/dolya.jpg 1x, ./image/workers/olya/dolya@2x.jpg 2x"
+                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                            <source srcset="./image/workers/olya/tolya.jpg, ./image/workers/olya/tolya@2x.jpg 2x "
+                                media="(min-width: 768px)" sizes="min-width:354px" />
+                            <source srcset="./image/workers/olya/molya.jpg, ./image/workers/olya/molya@2x.jpg 2x"
+                                media="(max-width: 767px)" sizes="min-width:290px" />
+                            <img src="./image/workers/olya/molya.jpg" alt="Ольга Репина" class="team__img">
+                        </picture>
                         <div class="team__area">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p lang="en" class="team__text">Frontend Developer</p>
@@ -207,7 +227,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="image/workers/kolya.jpg" alt="Николай Тарасов" width="270" class="team__img">
+                        <picture>
+                            <source srcset="./image/workers/kolya/dkolya.jpg 1x, ./image/workers/kolya/dkolya@2x.jpg 2x"
+                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                            <source srcset="./image/workers/kolya/tkolya.jpg, ./image/workers/kolya/tkolya@2x.jpg 2x "
+                                media="(min-width: 768px)" sizes="min-width:354px" />
+                            <source srcset="./image/workers/kolya/mkolya.jpg, ./image/workers/kolya/mkolya@2x.jpg 2x"
+                                media="(max-width: 767px)" sizes="min-width:290px" />
+                            <img src="./image/workers/kolya/mkolya.jpg" alt="Николай Тарасов" class="team__img">
+                        </picture>
                         <div class="team__area">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p lang="en" class="team__text">Marketing</p>
@@ -232,7 +260,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="image/workers/mysha.jpg" alt="Михаил Ермаков" width="270" class="team__img">
+                        <picture>
+                            <source srcset="./image/workers/mysha/dmysha.jpg 1x, ./image/workers/mysha/dmysha@2x.jpg 2x"
+                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                            <source srcset="./image/workers/mysha/tmysha.jpg, ./image/workers/mysha/tmysha@2x.jpg 2x "
+                                media="(min-width: 768px)" sizes="min-width:354px" />
+                            <source srcset="./image/workers/mysha/mmysha.jpg, ./image/workers/mysha/mmysha@2x.jpg 2x"
+                                media="(max-width: 767px)" sizes="min-width:290px" />
+                            <img src="./image/workers/mysha/mmysha.jpg" alt="Николай Тарасов" class="team__img">
+                        </picture>
                         <div class="team__area">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p lang="en" class="team__text">UI Designer</p>
