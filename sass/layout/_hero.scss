@@ -1,12 +1,14 @@
 .hero {
+    margin: 0 auto;
+    max-width: 1600px;
     background-color: var(--hero-footer-background-color);
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 78px;
+    padding-bottom: 78px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimg/mbgimg.jpg);
     background-repeat: no-repeat;
     background-size: 480px 400px;
     background-position: center;
-    margin: 0 auto;
+
 
 
     @media (min-device-pixel-ratio: 2),
@@ -16,6 +18,8 @@
     }
 
     @media screen and (min-width: 481px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-size: 768px 400px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimg/tbgimg.jpg);
 

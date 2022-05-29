@@ -53,7 +53,8 @@
                     <use href="./image/icon.svg#icon-close2"></use>
                 </svg></button>
             <ul class="mob-nav">
-                <li class="mob-nav__item"><a href="index.html" class="mob-nav__link link">Студия</a></li>
+                <li class="mob-nav__item"><a href="index.html" class="mob-nav__link nav__link--active link">Студия</a>
+                </li>
                 <li class="mob-nav__item"><a href="./portfolio.html" class="mob-nav__link link">Портфолио</a>
                 </li>
                 <li class="mob-nav__item"><a href="" class="mob-nav__link link">Контакты</a></li>
@@ -163,11 +164,11 @@
                     <li class="team__item">
                         <picture>
                             <source srcset="./image/workers/ihor/dihor.jpg 1x, ./image/workers/ihor/dihor@2x.jpg 2x"
-                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                                media="(min-width: 1200px)" />
                             <source srcset="./image/workers/ihor/tihor.jpg, ./image/workers/ihor/tihor@2x.jpg 2x "
-                                media="(min-width: 768px)" sizes="min-width:354px" />
+                                media="(min-width: 768px)" />
                             <source srcset="./image/workers/ihor/mihor.jpg, ./image/workers/ihor/mihor@2x.jpg 2x"
-                                media="(max-width: 767px)" sizes="min-width:290px" />
+                                media="(max-width: 767px)" />
                             <img src="./image/workers/ihor/mihor.jpg" alt="Игорь Демьяненко" class="team__img">
                         </picture>
                         <div class="team__area">
@@ -196,11 +197,11 @@
                     <li class="team__item">
                         <picture>
                             <source srcset="./image/workers/olya/dolya.jpg 1x, ./image/workers/olya/dolya@2x.jpg 2x"
-                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                                media="(min-width: 1200px)" />
                             <source srcset="./image/workers/olya/tolya.jpg, ./image/workers/olya/tolya@2x.jpg 2x "
-                                media="(min-width: 768px)" sizes="min-width:354px" />
+                                media="(min-width: 768px)" />
                             <source srcset="./image/workers/olya/molya.jpg, ./image/workers/olya/molya@2x.jpg 2x"
-                                media="(max-width: 767px)" sizes="min-width:290px" />
+                                media="(max-width: 767px)" />
                             <img src="./image/workers/olya/molya.jpg" alt="Ольга Репина" class="team__img">
                         </picture>
                         <div class="team__area">
@@ -229,11 +230,11 @@
                     <li class="team__item">
                         <picture>
                             <source srcset="./image/workers/kolya/dkolya.jpg 1x, ./image/workers/kolya/dkolya@2x.jpg 2x"
-                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                                media="(min-width: 1200px)" />
                             <source srcset="./image/workers/kolya/tkolya.jpg, ./image/workers/kolya/tkolya@2x.jpg 2x "
-                                media="(min-width: 768px)" sizes="min-width:354px" />
+                                media="(min-width: 768px)" />
                             <source srcset="./image/workers/kolya/mkolya.jpg, ./image/workers/kolya/mkolya@2x.jpg 2x"
-                                media="(max-width: 767px)" sizes="min-width:290px" />
+                                media="(max-width: 767px)" />
                             <img src="./image/workers/kolya/mkolya.jpg" alt="Николай Тарасов" class="team__img">
                         </picture>
                         <div class="team__area">
@@ -262,11 +263,11 @@
                     <li class="team__item">
                         <picture>
                             <source srcset="./image/workers/mysha/dmysha.jpg 1x, ./image/workers/mysha/dmysha@2x.jpg 2x"
-                                media="(min-width: 1200px)" sizes="min-width:270px" />
+                                media="(min-width: 1200px)" />
                             <source srcset="./image/workers/mysha/tmysha.jpg, ./image/workers/mysha/tmysha@2x.jpg 2x "
-                                media="(min-width: 768px)" sizes="min-width:354px" />
+                                media="(min-width: 768px)" />
                             <source srcset="./image/workers/mysha/mmysha.jpg, ./image/workers/mysha/mmysha@2x.jpg 2x"
-                                media="(max-width: 767px)" sizes="min-width:290px" />
+                                media="(max-width: 767px)" />
                             <img src="./image/workers/mysha/mmysha.jpg" alt="Николай Тарасов" class="team__img">
                         </picture>
                         <div class="team__area">
@@ -380,7 +381,7 @@
                 </ul>
 
             </div>
-            <div>
+            <div class="subscription-block">
                 <h2 class="footer__titles">Подпишитесь на рассылку</h2>
                 <div>
                     <form class="subscription">
@@ -395,7 +396,7 @@
             </div>
         </div>
     </footer>
-    <!--------------------------Модалка----------------------------->
+    <!--Модалка-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btn" data-modal-close><svg class="close-btn__icon" width="18" height="18">
@@ -425,9 +426,9 @@
                     </div>
                 </div>
                 <div class="form__item">
-                    <label for="email" class="form__label">Почта</label>
+                    <label for="mod-email" class="form__label">Почта</label>
                     <div class="form__container">
-                        <input type="email" name="email" class="form__input" id="email">
+                        <input type="email" name="email" class="form__input" id="mod-email">
                         <svg class="form__icon" width="18" height="18">
                             <use href="./image/icon.svg#icon-emailb">
                             </use>
@@ -449,8 +450,8 @@
                             <use href="./image/icon.svg#icon-check-off">
                             </use>
                         </svg>
-                        <div class="conditions__label-text"> Соглашаюсь с рассылкой и принимаю <a href=""
-                                class="conditions__link">Условия договора</a></div>
+                        <span class="conditions__label-text"> Соглашаюсь с рассылкой и принимаю <a href=""
+                                class="conditions__link">Условия договора</a></span>
                     </label>
                 </div>
                 <button type="submit" class="form__btn main-btn btn">Отправить</button>

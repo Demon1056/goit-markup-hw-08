@@ -10,9 +10,29 @@
 }
 
 .footer__block {
-    margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 }
 
+.footer__block:first-child {
+    @media screen and (min-width: 1200px) {
+        flex-grow: 1;
+        margin-right: 60px;
+    }
+}
+
+.footer__block:nth-child(2) {
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
+}
+
+.subscription-block {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+}
 
 .footer__address {
     font-style: normal;
